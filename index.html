@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -37,6 +38,11 @@
             <li><a href="" class="page-nav-list link">Contacts</a></li>
           </ul>
         </nav>
+        <button class="menu-button" type="button">
+          <svg class="heder-img" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
 
         <address class="contakts">
           <ul class="contakts-list list">
@@ -128,6 +134,7 @@
           <ul class="team-list list">
             <li class="team-list-item">
               <img
+                srcset="./images/jpg/img-3@2x.jpg 2x"
                 src="./images/jpg/img-3.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -185,6 +192,7 @@
 
             <li class="team-list-item">
               <img
+                srcset="./images/jpg/img-2@2x.jpg 2x"
                 src="./images/jpg/img-2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -240,6 +248,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/jpg/img-1@2x.jpg 2x"
                 src="./images/jpg/img-1.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -295,6 +304,7 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="./images/jpg/img@2x.jpg 2x"
                 src="./images/jpg/img.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -360,10 +370,17 @@
             <li class="portfolio-list-item">
               <div class="box-img">
                 <img
-                  src="./images/portfolio/img-5.jpg"
+                  srcset="
+                    ./images/portfolio/car-a/card-desctop-a.jpg    360w,
+                    ./images/portfolio/car-a/card-desctop-a@2x.jpg 720w,
+                    ./images/portfolio/car-a/card-table-a.jpg      356w,
+                    ./images/portfolio/car-a/card-table-a@2x.jpg   712w,
+                    ./images/portfolio/car-a/card-mobile-a.jpg     288w,
+                    ./images/portfolio/car-a/card-mobile-a@2x.jpg  576w
+                  "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portfolio/car-a/card-mobile-a.jpg"
                   alt="Banking App"
-                  width="360"
-                  height="300"
                   class="portfolio-list-img"
                 />
 
@@ -381,10 +398,17 @@
             <li class="portfolio-list-item">
               <div class="box-img">
                 <img
-                  src="./images/portfolio/img-4.jpg"
+                  srcset="
+                    ./images/portfolio/car2/card-mobile-2.jpg     288w,
+                    ./images/portfolio/car2/card-mobile-2@2x.jpg  576w,
+                    ./images/portfolio/car2/card-table-2.jpg      356w,
+                    ./images/portfolio/car2/card-table-2@2x.jpg   712w,
+                    ./images/portfolio/car2/card-desctop-2.jpg    360w,
+                    ./images/portfolio/car2/card-desctop-2@2x.jpg 720w
+                  "
+                  sizes="(max-width: 767px) 288px, (min-width: 768px) 356px, (min-width: 1158px) 360px"
+                  src="./images/portfolio/car2/card-mobile-2.jpg"
                   alt="Cashless Payment"
-                  width="360"
-                  height="300"
                   class="portfolio-list-img"
                 />
                 <p class="text-img">
@@ -401,10 +425,17 @@
             <li class="portfolio-list-item">
               <div class="box-img">
                 <img
-                  src="./images/portfolio/img-3.jpg"
+                  srcset="
+                    ./images/portfolio/car3/card-mobile-3.jpg     288w,
+                    ./images/portfolio/car3/card-mobile-3@2x.jpg  576w,
+                    ./images/portfolio/car3/card-table-3.jpg      356w,
+                    ./images/portfolio/car3/card-table-3@2x.jpg   712w,
+                    ./images/portfolio/car3/card-desctop-3.jpg    360w,
+                    ./images/portfolio/car3/card-desctop-3@2x.jpg 720w
+                  "
+                  sizes="(max-width: 767px) 288px, (min-width: 768px) 356px, (min-width: 1158px) 360px"
+                  src="./images/portfolio/car3/card-mobile-3.jpg"
                   alt="Meditation App"
-                  width="360"
-                  height="300"
                   class="portfolio-list-img"
                 />
                 <p class="text-img">
@@ -421,10 +452,17 @@
             <li class="portfolio-list-item">
               <div class="box-img">
                 <img
-                  src="./images/portfolio/img-2.jpg"
+                  srcset="
+                    ./images/portfolio/car4/card-mobile-4.jpg     288w,
+                    ./images/portfolio/car4/card-mobile-4@2x.jpg  576w,
+                    ./images/portfolio/car4/card-table-4.jpg      356w,
+                    ./images/portfolio/car4/card-table-4@2x.jpg   712w,
+                    ./images/portfolio/car4/card-desctop-4.jpg    360w,
+                    ./images/portfolio/car4/card-desctop-4@2x.jpg 720w
+                  "
+                  sizes="(max-width: 767px) 288px, (min-width: 768px) 356px, (min-width: 1158px) 360px"
+                  src="./images/portfolio/car4/card-mobile-4.jpg"
                   alt="Taxi Service"
-                  width="360"
-                  height="300"
                   class="portfolio-list-img"
                 />
                 <p class="text-img">
@@ -441,10 +479,17 @@
             <li class="portfolio-list-item">
               <div class="box-img">
                 <img
-                  src="./images/portfolio/img-1.jpg"
+                  srcset="
+                    ./images/portfolio/car5/card-mobile-5.jpg     288w,
+                    ./images/portfolio/car5/card-mobile-5@2x.jpg  576w,
+                    ./images/portfolio/car5/card-table-5.jpg      356w,
+                    ./images/portfolio/car5/card-table-5@2x.jpg   712w,
+                    ./images/portfolio/car5/card-desctop-5.jpg    360w,
+                    ./images/portfolio/car5/card-desctop-5@2x.jpg 720w
+                  "
+                  sizes="(max-width: 767px) 288px, (min-width: 768px) 356px, (min-width: 1158px) 360px"
+                  src="./images/portfolio/car5/card-mobile-5.jpg"
                   alt="Screen Illustrations"
-                  width="360"
-                  height="300"
                   class="portfolio-list-img"
                 />
                 <p class="text-img">
@@ -461,10 +506,17 @@
             <li class="portfolio-list-item">
               <div class="box-img">
                 <img
-                  src="./images/portfolio/img.jpg"
+                  srcset="
+                    ./images/portfolio/car6/card-mobile-6.jpg     288w,
+                    ./images/portfolio/car6/card-mobile-6@2x.jpg  576w,
+                    ./images/portfolio/car6/card-table-6.jpg      356w,
+                    ./images/portfolio/car6/card-table-6@2x.jpg   712w,
+                    ./images/portfolio/car6/card-desctop-6.jpg    360w,
+                    ./images/portfolio/car6/card-desctop-6@2x.jpg 720w
+                  "
+                  sizes="(max-width: 767px) 288px, (min-width: 768px) 356px, (min-width: 1158px) 360px"
+                  src="./images/portfolio/car6/card-mobile-6.jpg"
                   alt="Online Courses"
-                  width="360"
-                  height="300"
                   class="portfolio-list-img"
                 />
                 <p class="text-img">
@@ -483,7 +535,7 @@
       </section>
     </main>
     <!-- tooter -->
-    <footer class="the-end">
+    <!-- <footer class="the-end">
       <div class="container end-container">
         <div class="logo-end-conteiner">
           <a href="./index.html" class="secondery-logo link"
@@ -565,9 +617,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- BACKDROP WITH MODAL WINDOW -->
-    <div class="backdrop is-open">
+    <!-- <div class="backdrop">
       <div class="modal">
         <button class="close-button" type="button">
           <svg
@@ -675,6 +727,98 @@
 
           <button class="buttom-mod" type="submit">Send</button>
         </form>
+      </div>
+    </div> -->
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+      <button class="menu-button-icon-close" type="button">
+        <svg
+          class="menu-icon-close"
+          width="8"
+          heigth="8"
+          aria-label="modile menu icon close"
+        >
+          <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="menu-nav list">
+          <li class="menu-nav-after">
+            <a href="./index.html" class="menu-nav-list link link-color"
+              >Studio</a
+            >
+          </li>
+          <li><a href="" class="menu-nav-list link">Portfolio</a></li>
+          <li><a href="" class="menu-nav-list link">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="mobile-menu-contakts">
+        <ul class="mobile-menu-contakts-list list">
+          <li class="mobile-menu-contakts-list-ltem">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu-contakts-link link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mobile-menu-contakts-list-ltem">
+            <a href="tel:+110001111111" class="mobile-menu-contakts-link link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="mobile-menu-social">
+        <ul class="mobile-menu-social-list list">
+          <li class="mobile-menu-social-list-item">
+            <a href="" class="mobile-menu-social-list-link link">
+              <svg
+                class="mobile-menu-social-icon"
+                width="24"
+                height="24"
+                aria-label="instagram icon"
+              >
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-list-item">
+            <a href="" class="mobile-menu-social-list-link link">
+              <svg
+                class="mobile-menu-team-social-icon"
+                width="24"
+                height="24"
+                aria-label="twitter icon"
+              >
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-list-item">
+            <a href="" class="mobile-menu-social-list-link link">
+              <svg
+                class="mobile-menu-social-icon"
+                width="24"
+                height="24"
+                aria-label="facebook icon"
+              >
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-social-list-item">
+            <a href="" class="mobile-menu-social-list-link link">
+              <svg
+                class="mobile-menu-team-social-icon"
+                width="24"
+                height="24"
+                aria-label="linkedin icon"
+              >
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
