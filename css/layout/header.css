@@ -80,12 +80,12 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
-
+.mobile-menu-nav {margin: auto;}
 .menu-nav {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 168px;
+    
 }
 
 .menu-nav-list {
@@ -118,6 +118,7 @@
 .mobile-menu-contakts-link {
     color: #434455;
     font-size: 20px;
+    font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02px;
@@ -173,7 +174,6 @@
         display: none;
     }
 .container-navigate {
-    padding-top: 16px;
     align-items: center;
     }
 
@@ -237,6 +237,7 @@ border-bottom: 1px solid  #E7E9FC;
 .contakts-link {
     color: #434455;
         font-size: 12px;
+        font-style: normal;
         font-weight: 400;
         line-height: 1.17;
         letter-spacing: 0.04em;
@@ -252,8 +253,8 @@ border-bottom: 1px solid  #E7E9FC;
 .main-page {
             box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
-.container-navigate {
-    padding-top: 0;
+.logo {
+    margin-right: 76px;
 }
 .contakts {
     font-style: normal;

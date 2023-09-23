@@ -77,4 +77,8 @@
     line-height: 1.20;
     text-transform: none;
 }
+.option-list-text {
+    font-weight: 400;
+    
+}
 }
